@@ -4,11 +4,17 @@ import org.springframework.stereotype.Controller;
 
 /**
  * @Auther luojingyu
- * @date 2019/12/14 11:49
+ * @date 2019/12/14 15:09
  */
+
 @Controller
 public class ItemController {
+
     public void say(){
-        System.out.println("nihao ");
+        System.out.println("更改了Item");
+    }
+
+    public void speak(){
+        System.out.println("大叫好");
     }
 }

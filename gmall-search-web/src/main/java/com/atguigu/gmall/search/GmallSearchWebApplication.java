@@ -7,7 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class GmallSearchWebApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(GmallSearchWebApplication.class, args);
+		System.out.println("架构师加钱,不加钱就删库跑路");
 	}
 
 }
