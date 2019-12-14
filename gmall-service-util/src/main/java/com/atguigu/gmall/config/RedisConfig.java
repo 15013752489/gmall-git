@@ -1,0 +1,38 @@
+package com.atguigu.gmall.config;
+
+import com.atguigu.gmall.util.RedisUtil;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.SpringBootConfiguration;
+import org.springframework.context.annotation.Bean;
+
+/**
+ * Description:
+ * ClassName: RedisConfig
+ * date: 2019/11/21 16:51
+ *
+ * @author fancy Email:395765197@qq.com
+ * @version 1.0
+ * @since JDK 1.8
+ */
+@SpringBootConfiguration
+public class RedisConfig {
+    //读取配置文件中的redis的ip地址
+    @Value("${spring.redis.host:disabled}")
+    private String host;
+
+    @Value("${spring.redis.port:0}")
+    private int port;
+
+    @Value("${spring.redis.database:0}")
+    private int database;
+
+    @Bean
+    public RedisUtil getRedisUtil() {
+        if (host.equals("disabled")) {
+            return null;
+        }
+        RedisUtil redisUtil = new RedisUtil();
+        redisUtil.initPool(host, port, database);
+        return redisUtil;
+    }
+}
