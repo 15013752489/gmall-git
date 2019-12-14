@@ -11,6 +11,7 @@ public class GmallSearchWebApplication {
 		SpringApplication.run(GmallSearchWebApplication.class, args);
 		System.out.println("架构师加钱,不加钱就删库跑路");
 		System.out.println("架构师已经跑路了,我也准备跑路了");
+		System.out.println("我收到了，我也准备跑路了");
 	}
 
 }
