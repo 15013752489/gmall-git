@@ -14,5 +14,6 @@ public class GitCommit {
         System.out.println("测试");
         System.out.println("ceshi ");
         System.out.println("测试");
+        System.out.println("test");
     }
 }
