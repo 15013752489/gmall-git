@@ -12,6 +12,7 @@ public class GmallSearchWebApplication {
 		System.out.println("架构师加钱,不加钱就删库跑路");
 		System.out.println("架构师已经跑路了,我也准备跑路了");
 		System.out.println("我收到了，我也准备跑路了");
+		System.out.println("11");
 	}
 	public void add(){
 		System.out.println("这就是灌篮123");
